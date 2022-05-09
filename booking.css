@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-family: 'Raleway';
+    font-size: 35px;
+    font-weight: 800;
+    color: rgb(240, 28, 28) !important;
+}
+.brand{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+.nav-link{
+    font-size: 16px;
+    margin: 15px;
+    font-style: bold;
+    font-weight: 600;
+    color: pink !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-link:hover{
+    color: pink !important;
+}
+.active .nav-link{
+    color: rgb(241, 14, 14) !important;
+}
+.menu-right-btn{
+    background-color: rgb(228, 195, 231);
+    border: 2px solid !important;
+    background-color: transparent;
+    transition:  all 200ms ease-in;
+}
+.menu-right-btn:hover{
+    color: white;
+    background-color: palevioletred;   
+}
+
+.ul li a{
+    color: rgb(109, 78, 78) !important;
+    float: left;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./img/banner2.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background:  url("./img/book1.jpg") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: rgb(231, 213, 213);
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 3px 15px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: white;
+    background: #000000;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+.footer{
+    background:  white;
+    margin-top: 5px;
+    padding-top: 20px;
+}
