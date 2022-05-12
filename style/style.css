@@ -11,7 +11,8 @@
 }
 .brand{
     font-size: 50px;
-    font-family: 'Raleway', sans-serif ;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
 }
 .nav-link{
     font-size: 16px;
@@ -28,35 +29,42 @@
     color: rgb(161, 59, 59) !important;
 }
 .menu-right-btn{
-    background-color: rgb(229, 216, 186);
-    border: 10px double black;
-    transition:  all 200ms ease-in;
+    font-weight: 600;
+    background: transparent;
+    font-weight: 600;
 }
 .menu-right-btn:hover{
     color: white;
-    background-color: rgb(233, 158, 183); 
+    background-color: rgb(231, 120, 157); 
 }
 .btn a{
     color: black;
+    font-weight: 600;
     background: transparent;
     transition: all .3s ease-in-out;
 }
 .btn:hover a{
     transform: scale(1.1);
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     font-weight: 600;
 }
-header{
-    background-color:  black;
-    background:transparent;
-}
+
 .site-content{
-    background-image: url(../img/background5.jpg);
+    background-image: url(../img/background1.png);
     background-size: cover;
     height: 860px;
+    
 }
-
+.heading{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background: rgb(245, 242, 234);
+    text-align: center;
+}
 .thumbnail img{
     width: 270px;
     height: 250px;
@@ -68,13 +76,7 @@ header{
     transform: scale(1.1);
     z-index: 2;
 }
-.heading{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    background: rgb(241, 218, 194);
-    text-align: center;
-}
+
 .review{
     margin: 50px auto;
     text-align: center;
@@ -148,4 +150,19 @@ blockquote::after{
     background:  white;
     margin-top: 5px;
     padding-top: 20px;
+}
+h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 20px;
+}
+.list-group-item{
+    background-color: rgba(252, 247, 235, 0.5) !important;
+    border-bottom: 2px solid !important;
+    font-weight: 500;
+}
+.services{
+    float: left;
+}
+.prices{
+    float: right;
 }
